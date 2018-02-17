@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:elevation="12dp"
+        android:gravity="center"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/userdp_other"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:gravity="center"></ImageView>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/user_link_other"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="0.09"
+        android:gravity="center"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/user_about_other"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="0.09"
+        android:gravity="center"
+        android:text="TextView"
+        android:layout_below="@+id/user_link_other"
+        android:layout_alignStart="@+id/user_link_other" />
+
+    <EditText
+        android:id="@+id/post_like_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/user_about_other"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/text_border"
+        android:ems="10"
+        android:hint="Like"
+        android:inputType="textPersonName"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/post_dislike_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/post_like_txt"
+        android:layout_below="@+id/post_message_txt"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_border_2"
+        android:ems="10"
+        android:hint="Waqahah"
+        android:inputType="textPersonName"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/post_first_impression_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/post_dislike_txt"
+        android:layout_below="@+id/post_like_txt"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/text_border"
+        android:ems="10"
+        android:hint="First impression"
+        android:inputType="textPersonName"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/post_current_impression_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/post_first_impression_txt"
+        android:layout_below="@+id/post_first_impression_txt"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/text_border"
+        android:ems="10"
+        android:hint="Current impression"
+        android:inputType="textPersonName"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/post_message_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/text_border"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:layout_below="@+id/post_current_impression_txt"
+        android:layout_alignStart="@+id/post_current_impression_txt" />
+
+    <TextView
+        android:id="@+id/post_send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        android:layout_weight="1"
+        android:background="@drawable/border2"
+        android:padding="7dp"
+        android:text="Send"
+        android:textColor="#154436"
+        android:textStyle="bold"
+        android:layout_below="@+id/post_dislike_txt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/post_msg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/view2"
+        android:layout_below="@+id/user_about_other"
+        android:layout_marginTop="10dp"
+        android:text="Nobody is perfect :)"
+        android:textColor="#154436"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
